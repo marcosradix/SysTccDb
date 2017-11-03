@@ -37,11 +37,11 @@ public class AgendamentoTcc implements Serializable{
 	@NotNull
 	private String areaConhecimento;
 	@NotNull
-	private Date dataInicio;
+	private String dataInicio;
 	@NotNull
-	private Date dataFinal;
+	private String dataFinal;
 	@NotNull
-	private Date dataDefesa;
+	private String dataDefesa;
 	@NotNull
 	private String resultadoDefesa;
 	
@@ -93,22 +93,22 @@ public class AgendamentoTcc implements Serializable{
 	public void setAreaConhecimento(String areaConhecimento) {
 		this.areaConhecimento = areaConhecimento;
 	}
-	public Date getDataInicio() {
+	public String getDataInicio() {
 		return dataInicio;
 	}
-	public void setDataInicio(Date dataInicio) {
+	public void setDataInicio(String dataInicio) {
 		this.dataInicio = dataInicio;
 	}
-	public Date getDataFinal() {
+	public String getDataFinal() {
 		return dataFinal;
 	}
-	public void setDataFinal(Date dataFinal) {
+	public void setDataFinal(String dataFinal) {
 		this.dataFinal = dataFinal;
 	}
-	public Date getDataDefesa() {
+	public String getDataDefesa() {
 		return dataDefesa;
 	}
-	public void setDataDefesa(Date dataDefesa) {
+	public void setDataDefesa(String dataDefesa) {
 		this.dataDefesa = dataDefesa;
 	}
 	public String getResultadoDefesa() {
@@ -118,8 +118,8 @@ public class AgendamentoTcc implements Serializable{
 		this.resultadoDefesa = resultadoDefesa;
 	}
 	public AgendamentoTcc(String tcc, String tituloTcc, String aluno, String curso, String orientador,
-			String avaliadorInterno, String avaliadorExterno, String areaConhecimento, Date dataInicio, Date dataFinal,
-			Date dataDefesa, String resultadoDefesa) {
+			String avaliadorInterno, String avaliadorExterno, String areaConhecimento, String dataInicio, String dataFinal,
+			String dataDefesa, String resultadoDefesa) {
 		super();
 		this.tcc = tcc;
 		this.tituloTcc = tituloTcc;
